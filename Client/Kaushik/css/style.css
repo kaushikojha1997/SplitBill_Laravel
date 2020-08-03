@@ -1,0 +1,68 @@
+body{
+	background: #2c4e54;
+	
+	width: 100%;
+}
+#container{
+	background: #fff;
+	width: 40%;
+	min-height: 380px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 20% 0 20% 0;
+}
+#logo{
+	width: 50px;
+}
+img{
+	width: 100%;
+	display: inline-block;
+}
+ h1{
+	display: inline-block;
+	font-size: 3.2em;
+	color: #a9712b;
+}
+h2{
+	display: inline-block;
+	font-size: 1.8em;
+	color: #333;
+	text-align: center;
+	margin: 0;
+}
+#heading{
+	text-align: center;
+}
+#login	input[type='email'],#login	input[type='password'],#login input[type='text']{
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	outline: none;
+	border:none;
+	border-bottom: 2px solid #2c4e54;
+	margin:  0 auto;
+}
+form{
+	margin: 0 auto;
+	width: 70%;
+	text-align: center;
+}
+input[type='submit']{
+	margin: 10px;
+	padding:10px 15px;
+	background: #2c4e54;
+	color: #fff;
+	outline: none;
+	border:none;
+	font-size: 1.2em;
+	border-radius: 4px;
+}
+.link{
+	padding: 10px;
+	margin-left: 20px;
+	color: #2c4e54;
+	cursor: pointer;
+	margin-top: 0;
+}

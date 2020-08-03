@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SplitBill</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script src="./js/angular.js"></script>
+	<script src="./js/app.module.js"></script>
+</head>
+<body ng-app='app' ng-controller='appCtrl'>
+	<div id="container">
+		<div id="heading">
+		<img id="logo" src="./assets/logo-splitbill.png">
+		<h1>Splitbill</h1> </div>
+		<div ng-if="show=='login'" id="login">
+			
+			<form>
+				<H2>Login</H2>
+				<input ng-model=email type="email" name="email" required="required" placeholder="email">
+			<input ng-model=password type="password" name="password" required="required" placeholder="password">
+			<br>
+			<input ng-click=login(email,password) type="submit" name="submit">
+			
+			</form>
+			<p class="link" ng-click="showChange('signup')">Signup</p>
+		</div>
+
+		<div ng-if="show=='signup'" id="login">
+			<form>
+				<H2>Signup</H2>
+				<input ng-model=name type="text" name="name" required="required" placeholder="Name">
+				<input ng-model=email type="email" name="email" required="required" placeholder="email">
+			<input ng-model=password type="password" name="password" required="required" placeholder="password">
+			<br>
+			<input ng-click=signup(name,email,password) type="submit" name="submit">
+			
+			</form>
+			<p class="link" ng-click="showChange('login')">Login</p>
+		</div>
+	</div>
+</body>
+</html>
